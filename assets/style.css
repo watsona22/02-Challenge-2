@@ -6,16 +6,23 @@
 }
 
 body {
-
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-start;*/
+    margin: 20px;
+    padding: 0;
+    grid-column: auto;
+    
 }
+    
+h3 {
+    float: left;
+    position: relative;
+    left: 30px;
+    margin: 10px;
+    color: darkgreen; 
+    
 
-header {
-
-
-}
-
-header h1 {
-        
 }
 
 header nav {
@@ -23,9 +30,35 @@ header nav {
  font-size: 20px;
  
 }
+.column {
+    float: left;
+    padding: 10px;
 
+}
+main {
+    display: flex;
+    text-wrap: auto;
+
+}
+
+.nav{
+    margin-top: 100px;
+    padding: 0;
+    list-style:none;
+    display: flex;
+
+}
+
+.nav li h3{
+    display: block;
+    line-height: 3em;
+    width: 100%;
+    text-decoration: none;
+
+
+}
 a {
-    color: #d9dcd6; 
+    color: darkgreen; 
 }
 
 header nav ul li {
@@ -42,6 +75,8 @@ header nav ul li {
     background-size: cover;
     background-position: center;
 }
+
+
 .code {
     display: flex;
     flex-wrap: wrap;
@@ -54,12 +89,15 @@ header nav ul li {
     text-align: center;
     border-style: solid;
     border-width: 1px;
+    margin: 10px;
   }
   
   .card header {
     padding: 20px;
     background: teal;
     color: #fff;
+    background-image: linear-gradient(teal, white);
+    
   }
   
   .card img {
@@ -69,19 +107,50 @@ header nav ul li {
     display: grid;
   }
 
-footer p {
-    float: left;
-    font-size: 20px;
-}
+  .card:hover {
+    background-color: teal;
+    color: white;
+  }
 
-footer div ul li{
-    display: inline-block;
-    margin-right: 25px;
-}
+  .card:active {
+    box-shadow: 0 0 10 px;
+  }
 
-
-.row {
+  .card:focus {
+    outline: none;
+    border-color: blue;
+  }
+/*
+  .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+*/
+
+.tooltip:hover {
+    cursor: pointer;
+}
+
+footer p {
+    float: left;
+    font-size: 20px;
+   
+}
+
+footer div ul li{
+    display: inline-block;
+    margin-right: 25px; 
+    position: relative;
+    left: 30px;
+    border: 1px;
+}
+
+
+
+
+@media screen and (max-width: 768px)
+    main,
+    nav {
+      flex-direction: column;
+    }
