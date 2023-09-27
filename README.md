@@ -25,7 +25,7 @@ I learned that targeting parent attributes is the best way to manipulate content
 ## Usage
 
 The html and css file can be used to view the deployed page. A link to the mockup is accessible from the repository file list. 
-![Horiseon Website Mockup](01-html-css-git-homework-demo.png)
+![Reference Mockup](portfolio-spec-screenshot_720.png)
 
 ## Credits
 
