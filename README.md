@@ -21,7 +21,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 All criteria were met and the site functions as expected. 
 
-I learned that targeting parent attributes is the best way to manipulate children elements in a clear, direct way. In one iteration of the code, flex attributes were applied to the children and it created inconsistencies in behavior. Applying attributes to higher order elements created more successful outcomes. I also learned that position is easier to affect using percentage values as inherited from parent elements instead of forcing dramatic changes pixel by pixel. I now have a better handle on flex-box and front-end CSS features.
+I learned that targeting parent attributes is the best way to manipulate content on the page. In one iteration of the code, flex attributes were applied to the children and it created inconsistencies in behavior. Applying attributes to higher order elements created more successful outcomes. I also learned that position is easier to affect using percentage values as inherited from parent attributes instead of forcing dramatic changes pixel by pixel. I now have a better handle on flex-box and front-end CSS features.
 ## Usage
 
 The html and css file can be used to view the deployed page. A link to the mockup is accessible from the repository file list. 
