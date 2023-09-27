@@ -1,8 +1,8 @@
-*{
+* {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-
+}
+:root {
+    --background: gray;
 }
 
 body {
@@ -12,9 +12,10 @@ body {
     margin: 20px;
     padding: 0;
     grid-column: auto;
+    margin-left: 0;
     
 }
-    
+
 h3 {
     float: left;
     position: relative;
@@ -30,35 +31,64 @@ header nav {
  font-size: 20px;
  
 }
-.column {
-    float: left;
-    padding: 10px;
+header,
+footer {
+    background-color: teal;
+    position: relative;
 
 }
+.relative {
+    height: 300 px;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+
+}
+
+
+
+#about-me {
+    width: 45%;
+}
+.work-1 {
+    width: 100%;
+    height: 100px;
+}
+
 main {
     display: flex;
-    text-wrap: auto;
+    flex-wrap: wrap;
 
 }
 
 .nav{
-    margin-top: 100px;
     padding: 0;
     list-style:none;
     display: flex;
+}
 
+.nav {
+    border-radius: 20px;
+    border-color: teal;
+}
+
+.nav p {
+    padding: 20px;
 }
 
 .nav li h3{
-    display: block;
+    display: flex;
+    display: inline;
     line-height: 3em;
     width: 100%;
     text-decoration: none;
+    text-align: center;
 
 
 }
+
 a {
-    color: darkgreen; 
+    color: black; 
 }
 
 header nav ul li {
@@ -67,30 +97,102 @@ header nav ul li {
     
 }
 
-.professional {
-    height: 300px;
+section.card {
+    width: 48%;
+    flex: row;
+}
+
+section.card-1 {
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("./images/professional\ pic.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-
-.code {
-    display: flex;
+    flex: 1 0 0;
     flex-wrap: wrap;
-
 }
-
 .card {
-    flex: 1 0 200px;
     padding: 10px;
     text-align: center;
     border-style: solid;
     border-width: 1px;
     margin: 10px;
   }
+
+.card-1 {
+    padding: 10px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    min-width: 400px;
+    display: grid;
+    grid-template-columns: 20% 30%;
+    align-items: center;
+  }
+
+  .card-1 img {
+    width: 100%
+    display: grid;
+  }
+
+
+h2.style {
+    position: absolute;
+    display: block;
+    right: 50px;
+}
+
+.professional {
+    height: 300px;
+    width: 100%;
+    background-image: url("./images/professional\ pic.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: end;
+    line-height: 500px;
+    color: white;
+}
+
+#profile-picture img {
+    margin-right: 50px;
+
+}
+.relative {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    height: 300px;
+
+
+
+}
+section.nav {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+main.work-1 {
+    height: 100%;
+    display: flex;
+}
+
+#code {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*adjusted code, per AskBCS Learning assistant to remove display: grid attrbute*/
+    padding-top: 10px;
+    padding-right: 300px;
+    padding-bottom: 50px;
+    padding-left: 300px;
+
+}
+
+
   
   .card header {
     padding: 20px;
@@ -99,15 +201,23 @@ header nav ul li {
     background-image: linear-gradient(teal, white);
     
   }
-  
-  .card img {
-    width: 100%;
-    height: 300px;
-    min-width: 400px;
-    display: grid;
+
+  .card-1 header {
+    padding: 20px;
+    background: teal;
+    color: #fff;
+    background-image: linear-gradient(teal, white);
   }
+  
+ 
+
 
   .card:hover {
+    background-color: teal;
+    color: white;
+  }
+
+  .card-1:hover {
     background-color: teal;
     color: white;
   }
@@ -116,37 +226,63 @@ header nav ul li {
     box-shadow: 0 0 10 px;
   }
 
+  .card-1:active {
+    box-shadow: 0 0 10 px;
+  }
+
+  .card-1:focus {
+    outline: none;
+    border-color: blue;
+  }
+
   .card:focus {
     outline: none;
     border-color: blue;
   }
-/*
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-*/
 
 .tooltip:hover {
     cursor: pointer;
 }
 
-footer p {
-    float: left;
+main.tooltip {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    
+}
+.tooltip {
+    border-radius: 20px;
+    flex-direction: row;
+    height: 300 px;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+
+}
+#contact-me h3 p li {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+
+}
+footer p li a{
+    float: right;
     font-size: 20px;
+    
+  
    
 }
 
 footer div ul li{
     display: inline-block;
-    margin-right: 25px; 
-    position: relative;
+    margin-left: 25px; 
     left: 30px;
     border: 1px;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+
 }
-
-
 
 
 @media screen and (max-width: 768px)
