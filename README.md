@@ -25,11 +25,11 @@ I learned that targeting parent attributes is the best way to manipulate content
 ## Usage
 
 The html and css file can be used to view the deployed page. A link to the mockup is accessible from the repository file list. 
-![Reference Mockup](portfolio-spec-screenshot_720.png)
+![Reference Mockup](assets/images/portfolio-spec-screenshot_720.png)
 
 ## Credits
 
-The project was completed with help from the course materials and organization and CSS assistance provided by Bootcamp tutor, Alexis San Javier and AskBCS Learning Assistance, Yanga.
+The project was completed with help from the course materials. Suggestions for edits to organization and CSS attributes, provided by Bootcamp tutor, Alexis San Javier, AskBCS Learning Assistance Yanga, and Bootcamp TA, Melissa Hookey.
 
 ## License
 
