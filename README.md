@@ -1,4 +1,4 @@
-#Portfolio
+# Portfolio
 ## Description
 
 This is a basic portfolio demonstrating the use of flexboxes, media queries, and CSS variables. The supporting HTML and CSS files reflect best practices for naming conventions, comments and other quality features. 
