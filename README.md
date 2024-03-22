@@ -1,10 +1,12 @@
-# 02-Challenge-2
-
+#Portfolio
 ## Description
 
-The purpose of this challenge was to deploy a portfolio to showcase relevant skills to future employers. The project demonstrated the use of flexboxes, media queries, and CSS variables. The supporting HTML and CSS files reflected best practices for naming conventions, comments and other quality features. 
+This is a basic portfolio demonstrating the use of flexboxes, media queries, and CSS variables. The supporting HTML and CSS files reflect best practices for naming conventions, comments and other quality features. 
 
 The acceptance criteria were as follows: 
+
+## Acceptance Criteria
+```
 GIVEN I need to sample a potential employee's previous work
 WHEN I load their portfolio
 THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
@@ -18,7 +20,7 @@ WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
-
+```
 All criteria were met and the site functions as expected. 
 
 I learned that targeting parent attributes is the best way to manipulate content on the page. In one iteration of the code, flex attributes were applied to the children and it created inconsistencies in behavior. Applying attributes to higher order elements created more successful outcomes. I also learned that position is easier to affect using percentage values as inherited from parent attributes instead of forcing dramatic changes pixel by pixel. I now have a better handle on flex-box and front-end CSS features.
@@ -26,10 +28,6 @@ I learned that targeting parent attributes is the best way to manipulate content
 
 The html and css file can be used to view the deployed page. A link to the mockup is accessible from the repository file list. 
 ![Reference Mockup](assets/images/portfolio-spec-screenshot_720.png)
-
-## Credits
-
-The project was completed with help from the course materials. Suggestions for edits to organization and CSS attributes, provided by Bootcamp tutor, Alexis San Javier, AskBCS Learning Assistance Yanga, and Bootcamp TA, Melissa Hookey.
 
 ## License
 
